@@ -10,7 +10,12 @@
 
 - run the ios simulator (Xcode should be installed to run the simulator)
 
-- run the following scripts in terminal
+- run this script to run the server
+```
+yarn server
+```
+
+- run the following scripts in terminal to run UI part
 ```
 # to setup dependencies
 yarn install
