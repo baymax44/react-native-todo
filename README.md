@@ -8,24 +8,25 @@
 
 ## How to Run
 
+### Mobile by Expo GO
+- Scan the QR code to run the project on your device
+
+- NOTE: Server activities are fake. Please read [this](https://my-json-server.typicode.com/)
+
+### Local
 - run the ios simulator (Xcode should be installed to run the simulator)
 
-- run this script to run the server
-```
-yarn server
-```
-
 - run the following scripts in terminal to run UI part
-```
-# to setup dependencies
-yarn install
+   ```
+   # to setup dependencies
+   yarn install
 
-# to run the project on the iOS simulator
-yarn ios
+   # to run the project on the iOS simulator
+   yarn ios
 
-# to run the project on the android simulator
-yarn android
-```
+   # to run the project on the android simulator
+   yarn android
+   ```
 
 ## Expected behaviors
 
