@@ -1,9 +1,9 @@
 import { View, Text, StyleSheet } from "react-native";
 
-const NoTask = () => {
+const NoTask = ({ text = "No Tasks to show 😢" }) => {
   return (
     <View style={styles.wrapper}>
-      <Text style={styles.title}>No Tasks to show 😢</Text>
+      <Text style={styles.title}>{text}</Text>
     </View>
   );
 };

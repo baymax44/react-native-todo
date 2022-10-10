@@ -1,43 +1,30 @@
 import React from "react";
-import { View, Text, StyleSheet, ScrollView } from "react-native";
+import { StyleSheet, ScrollView } from "react-native";
 
 import Task from "./Task";
 import NoTask from "./NoTask";
 
 const Tasks = (props) => {
-  return (
-    <View style={styles.tasksWrapper}>
-      <Text style={styles.sectionTitle}>Task Tracker</Text>
+  if (props.tasks.length < 1) {
+    return <NoTask />;
+  }
 
-      {props.tasks.length > 0 ? (
-        <ScrollView style={styles.items}>
-          {props.tasks &&
-            props.tasks.map((task) => (
-              <Task
-                key={task.id}
-                onDelete={props.onDelete}
-                onToggle={props.onToggle}
-                {...task}
-              />
-            ))}
-        </ScrollView>
-      ) : (
-        <NoTask />
-      )}
-    </View>
+  return (
+    <ScrollView style={styles.items}>
+      {props.tasks &&
+        props.tasks.map((task) => (
+          <Task
+            key={task.id}
+            onDelete={props.onDelete}
+            onToggle={props.onToggle}
+            {...task}
+          />
+        ))}
+    </ScrollView>
   );
 };
 
 const styles = StyleSheet.create({
-  tasksWrapper: {
-    paddingTop: 80,
-    flex: 1,
-  },
-  sectionTitle: {
-    paddingHorizontal: 20,
-    fontSize: 24,
-    fontWeight: "bold",
-  },
   items: {
     paddingHorizontal: 20,
     marginTop: 30,
