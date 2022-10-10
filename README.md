@@ -1,5 +1,8 @@
 # Todo List by React Native
 
+![Simulator Screen Recording - iPhone 14 Pro Max - 2022-10-10 at 01 22 22](https://user-images.githubusercontent.com/77080974/194803180-d458ea05-fda2-4d4e-b1f2-d75a887e9d87.gif)
+
+
 - [How to Run](#how-to-run)
 - [Expected behaviors](#expected-behaviors)
 
